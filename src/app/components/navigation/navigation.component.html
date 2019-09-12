@@ -1,0 +1,36 @@
+<div class="Navigation">
+  <div *ngFor="let item of pages; let i = index">
+    <ng-container *ngIf="item.children.length === 0; else elseTemplate">
+      <div
+        class="item"
+        [routerLink]="[item.path]"
+        (click)="pageActive = i"
+        [ngClass]="{ active: pageActive == i }"
+      >
+        {{ item.name }}
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div
+        class="item items"
+        (click)="pageActive = i; item.childShow = true"
+        [ngClass]="{ active: pageActive == i }"
+      >
+        {{ item.name }}
+        <div
+          class="children"
+          *ngIf="pageActive == i && item.childShow === true"
+        >
+          <div
+            class="item"
+            *ngFor="let child of item.children; let j = index"
+            [routerLink]="[child.path]"
+            (click)="item.childShow = false; $event.stopPropagation()"
+          >
+            {{ child.name }}
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

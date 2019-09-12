@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.687" height="14.688" viewBox="0 0 19.687 14.688">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="868.313" y="41.313" width="19.687" height="14.688" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#1e9f64"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="speaker_拷贝" data-name="speaker 拷贝" class="cls-1" d="M881.269,54.431V53.12c1.448,0,3.754-3.8,3.754-5.245s-2.306-5.245-3.754-5.245V41.318c2.172,0,5.065,4.3,5.065,6.477S883.441,54.431,881.269,54.431Zm-2.982-2.623V50.5a2.628,2.628,0,1,0,0-5.245V43.94A3.938,3.938,0,1,1,878.287,51.808Zm-8.705-.321a1.122,1.122,0,0,1-1.277-.874V45.382a1.122,1.122,0,0,1,1.277-.874h2.667l5.038-3.19V54.431l-5.038-2.944h-2.667Z" transform="translate(-868.313 -41.313)"/>
+</svg>

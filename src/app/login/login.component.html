@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="content">
+    <div class="input">
+      <div class="img">
+        <img
+          src="../../assets/login-left.png"
+          alt=""
+          width="276"
+          height="276"
+        />
+      </div>
+
+      <div class="data">
+        <div class="title">
+          <img src="../../assets/194.png" alt="" /> 智能水肥一体机
+        </div>
+
+        <div><input type="text" placeholder="用户名" [(ngModel)]="name" /></div>
+        <div>
+          <input type="password" placeholder="密码" [(ngModel)]="pass" />
+        </div>
+
+        <div class="protocol">
+          <input type="checkbox" [(ngModel)]="checked" />已同意
+          <a href="#">《水肥一体化系统用户协议》</a>
+        </div>
+
+        <div class="onSubmit">
+          <button (click)="onSubmit()">登录</button>
+        </div>
+      </div>
+    </div>
+    <div class="bottom" (click)="onBackHome()">
+      <i class="iconfont">&#xe6a8;</i> 返回首页
+    </div>
+  </div>
+</div>

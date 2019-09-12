@@ -1,0 +1,14 @@
+﻿.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../assets/000开机首页.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.container .title {
+  color: white;
+  margin: 0;
+  padding: 50px 20px;
+}

@@ -1,0 +1,88 @@
+.pages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f2f3f8;
+}
+.pages .top {
+  width: 100%;
+  height: 35px;
+  background-color: #1e9f64;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 0 22px;
+  margin-bottom: 34px;
+}
+.pages .top .right {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pages .top .right .tag {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.pages .top .right .tag > div {
+  margin-left: 4px;
+}
+.pages .top .right > div:nth-child(2) {
+  margin: 0 20px;
+}
+.pages .header {
+  width: 836px;
+  height: 51px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.pages .header .right {
+  padding-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pages .header .right > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  background-color: #2abc6b;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.pages .nav {
+  width: 836px;
+  height: 34px;
+}
+.pages .pagesBody {
+  width: 836px;
+  min-height: 472px;
+  flex-grow: 1;
+}
+.pages .footer {
+  width: 100%;
+  height: 27px;
+  background-color: #1e9f64;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.pages .footer div {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 8px;
+}
